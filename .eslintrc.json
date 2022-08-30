@@ -5,11 +5,13 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:vue/vue3-recommended", "eslint:recommended", "prettier"],
+  "extends": ["plugin:vue3/recommended", "airbnb-base", "prettier"],
   "parserOptions": {
-    "ecmaVersion": 2021
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
   },
-  "plugins": ["prettier"],
+  "plugins": ["vue", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": [
       "error",
